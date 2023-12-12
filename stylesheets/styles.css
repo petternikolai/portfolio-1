@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  color: white;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    font-family: "Titillium web", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+    text-align: center;
+}
+
+.home {
+  margin: 0 10%;
+}
+
+.big-h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  margin: 0;
+  text-align: center;
+}
+
+.littlebit-spaced-out-letters {
+  font-size: 1.5rem;
+  letter-spacing: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.spaced-out-letters {
+  font-size: 1.5rem;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.divider {
+  border-bottom: 5px solid #0554f2;
+}
+
+ul {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+  justify-content: center;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #0554f2;
+}
+
+i:hover {
+    color: #2267F2;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cool-font {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text-col {
+    color: #0d0d0d;
+    background-color: white;
+    padding: 20%;
+}
+
+.img-col {
+    background-image: url("/images/selfie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container {
+    display: flex;
+    gap: 100px;
+    margin: 0 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2%;
+    color: #0d0d0d;
+}
+
+.card i {
+    color: #0d0d0d;
+    font-size: 1.75rem;
+}
+
+.card i:hover {
+    color: #0554f2;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+

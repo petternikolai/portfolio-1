@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  color: white;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  font-family: "Titillium web", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+.big-h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  margin: 0;
+  text-align: center;
+}
+
+.littlebit-spaced-out-letters {
+  font-size: 1.5rem;
+  letter-spacing: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.spaced-out-letters {
+  font-size: 1.5rem;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.divider {
+  border-bottom: 5px solid #0554f2;
+}
+
+ul {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+  justify-content: center;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #0554f2;
+}
+
+i:hover {
+  color: #2267f2;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cool-font {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text-col {
+  color: #0d0d0d;
+  background-color: white;
+  padding: 20%;
+}
+
+.img-col {
+  background-image: url("/images/selfie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container {
+  display: flex;
+  gap: 100px;
+  margin: 0 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33.33%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2%;
+  color: #0d0d0d;
+}
+
+.card i {
+  color: #0d0d0d;
+  font-size: 1.75rem;
+}
+
+.card i:hover {
+  color: #0554f2;
+}
+
+.card img {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #1d1d1d; /* Darker background for better readability */
+  }
+  section {
+    padding: 10px; /* Smaller padding */
+  }
+  .home {
+    margin: 0;
+  }
+  .littlebit-spaced-out-letters {
+    letter-spacing: 10px;
+    font-size: 0.75rem;
+  }
+  .spaced-out-letters {
+    letter-spacing: 15px;
+    font-size: 0.75rem;
+  }
+  .big-h1 {
+    font-size: 4rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.5em; /* Smaller font size */
+  }
+  .two-column-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .text-col {
+    padding: 5%;
+  }
+  .img-col {
+    width: 100%;
+    height: 500px;
+  }
+  /* Add more responsive styles here for extra small devices */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section {
+    padding: 15px; /* Moderate padding */
+  }
+  h2,
+  h3 {
+    font-size: 1.75em; /* Slightly larger font size */
+  }
+  .card-container {
+    margin: auto;
+    gap: 20px;
+    margin: 0;
+  }
+  .text-col {
+    padding: 10%;
+  }
+  .img-col {
+    width: 100%;
+  }
+  /* Add responsive styles here for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 20px; /* Increased padding */
+  }
+  h2,
+  h3 {
+    font-size: 2em; /* Larger font size */
+  }
+
+  /* Add responsive styles here for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section {
+    padding: 25px; /* More padding */
+  }
+  h2,
+  h3 {
+    font-size: 2.25em; /* Further increased font size */
+  }
+  /* Add responsive styles here for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+  body {
+    margin: 0 10%;
+  }
+  section {
+    padding: 30px;
+  }
+  h2,
+  h3 {
+    font-size: 2.5em;
+  }
+  .card-container {
+    gap: 20px;
+    margin: 0;
+  }
+}
+
+/* Very large devices (Very large laptops and desktops, 2560px and up) */
+@media only screen and (min-width: 2560px) {
+  body {
+    margin: 0 20%;
+  }
+  section {
+    padding: 30px;
+  }
+  h2,
+  h3 {
+    font-size: 2.5em;
+  }
+  .two-column-grid {
+    height: 1000px;
+  }
+  .text-col {
+    align-self: center;
+  }
+  .card-container {
+    gap: 20px;
+    margin: 0;
+  }
+}
